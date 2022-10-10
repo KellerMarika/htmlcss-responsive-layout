@@ -11,12 +11,24 @@
         VARIABILI
 **************************/
 
-:root {}
+:root {
+    --primary-color:#0084fd;
+    --primary-color-light:#b5ddff;
+    --secondary-color:#9792e4;
+    --tirdary-color:#fdc15f;
+
+    --primary-lltext-color:#5b6f80;
+}
 
 
 /* ***********************
         CLASS-UTILITIES
 **************************/
+.container{
+    margin: 0 auto;
+    
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +39,7 @@
     border: 1px solid rgb(90, 23, 15);
     padding: 20px;
     flex-basis: 100%;
+    flex-grow: 1;
     
 }
 
@@ -40,7 +53,25 @@
 }
 
 
+/* colori */
 
+.azul{
+    background-color: #b5ddff;
+    border-radius: 20px;
+    color: #5b6f80;
+
+}
+
+.lilla{
+    background-color: #b5ddff;
+    border-radius: 50px;
+    color: white;
+}
+
+.white{
+ background-color: white;
+ color: black;
+}
 
 
 /* ***********************
@@ -65,4 +96,15 @@ nav ul{
 
 #services .card-content .row{
     flex-direction: column;
+}
+
+
+
+
+/* ***********************
+        EXPERT
+**************************/
+
+#expert .card-img img{
+    border-radius: 50%;
 }
