@@ -14,7 +14,7 @@
 :root {
     --primary-color:#0084fd;
     --primary-color-light:#b5ddff;
-    --secondary-color:#9792e4;
+    p:#9792e4;
     --tirdary-color:#fdc15f;
 
     --primary-lltext-color:#5b6f80;
@@ -26,7 +26,8 @@
 **************************/
 .container{
     margin: 0 auto;
-    
+    text-align: center;
+
 }
 
 .row {
@@ -56,21 +57,27 @@
 /* colori */
 
 .azul{
-    background-color: #b5ddff;
-    border-radius: 20px;
+    background-color: var(--primary-color-light);
     color: #5b6f80;
 
 }
 
 .lilla{
-    background-color: #b5ddff;
-    border-radius: 50px;
+    background-color: var(--secondary-color);
     color: white;
 }
 
 .white{
  background-color: white;
  color: black;
+}
+
+.b-rad_m{
+    border-radius: 20px;
+}
+
+.b-rad_l{
+    border-radius: 50px;
 }
 
 
