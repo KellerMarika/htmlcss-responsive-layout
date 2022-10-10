@@ -6,6 +6,20 @@
 /*********MEDIUM SIZE*****************/
 @media screen and (min-width: 480px) {
 
+
+    .col_md_1-2{
+        flex-basis: calc(100% / 2);
+    }
+    
+
+    .col_md_1-3{
+        flex-basis: calc(100% /3);
+    }
+    
+    .col_md_2-3{
+        flex-basis: calc(100% /3 *2);
+    }
+
 }
 
 
@@ -13,4 +27,30 @@
 /********MEDIUM SIZE*******************/
 @media screen and (min-width: 768px) {
 
+    .container{
+        max-width:920px;
+
+    }
+
+    .col_lg_1-2{
+        flex-basis: calc(100% / 2);
+    }
+    
+    .col_lg_1-4{
+        flex-basis: calc(100% /4);
+    }
+    
+
+
+
+
+
+
+
+
+    nav li{
+        display: inline-block;
+    }
+    
+    
 }

@@ -1,24 +1,56 @@
 /* ***********************
         BASE
 **************************/
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 /* ***********************
         VARIABILI
 **************************/
 
-:root{
-
-}
+:root {}
 
 
 /* ***********************
         CLASS-UTILITIES
 **************************/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid salmon;
+}
 
+.row>*{
+    border: 1px solid rgb(90, 23, 15);
+    padding: 20px;
+    flex-basis: 100%;
+    
+}
+
+.card{
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.col_1-2{
+    flex-basis: calc(100% / 2);
+}
+
+
+
+
+
+/* ***********************
+        GENERAL
+**************************/
+
+
+a:not(footer){
+    text-decoration: none;
+}
 
 
 
@@ -26,3 +58,11 @@
 /* ***********************
         MOBILE-FIRST
 **************************/
+
+nav ul{
+    display: none;
+}
+
+#services .card-content .row{
+    flex-direction: column;
+}
