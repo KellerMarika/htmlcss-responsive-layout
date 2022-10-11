@@ -7,74 +7,80 @@
 
 @media screen and (min-width: 480px) {
 
-    .col_md_1-2{
+    .col_md_1-2 {
         flex-basis: calc(100% / 2);
     }
-    
 
-    .col_md_1-3{
+
+    .col_md_1-3 {
         flex-basis: calc(100% /3);
     }
-    
-    .col_md_2-3{
+
+    .col_md_2-3 {
         flex-basis: calc(100% /3 *2);
     }
 }
+
 /* ***********************
         SERVICES
 **************************/
-
-
-
+/* desktop:992
+large-desktop:1002 */
 
 /********LARGE SIZE*******************/
 @media screen and (min-width: 768px) {
 
-    .container{
-        max-width:920px;
+    .container {
+        max-width: 920px;
     }
 
-    .col_lg_1-2{
+    .col_lg_1-2 {
         flex-basis: calc(100% / 2);
     }
-    .col_lg_1-3{
+
+    .col_lg_1-3 {
         flex-basis: calc(100% /3);
     }
-    .col_lg_2-3{
+
+    .col_lg_2-3 {
         flex-basis: calc(100% /3 *2);
     }
-    
-    .col_lg_1-4{
+
+    .col_lg_1-4 {
         flex-basis: calc(100% /4);
     }
-    .col_lg_3-4{
+
+    .col_lg_3-4 {
         flex-basis: calc(100% /4 * 3);
     }
-    
-    .col_lg_1-5{
+
+    .col_lg_1-5 {
         flex-basis: calc(100% /5);
     }
-    
-    .col_lg_4-5{
+
+    .col_lg_4-5 {
         flex-basis: calc(100% /5 * 4);
     }
 
-    .row-col{
-        flex-direction: row;
+    .row-col {
+    flex-direction: row !important;
     }
+
+
+
     /****** NAV *******/
 
-    nav ul{
-        display:inline-block
+    nav ul {
+        display: inline-block
     }
 
-    nav li{
+    nav li {
         display: inline-block;
     }
-    
-    nav .sandwitch-menu{
+
+    nav .sandwitch-menu {
         display: none;
     }
 
-    
+
     /* ***** SERVICES ******* */

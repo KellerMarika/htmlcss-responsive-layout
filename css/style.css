@@ -192,15 +192,13 @@ nav .logo img {
 /* ***********************
         SERVICES
 **************************/
-#services .row{
+#services .card .row{
     text-align: left;
+    flex-direction: column;
 }
 
-
-
-
 #service #s1_img{
-    width: 50%;
+    width: 100%;
 }
 
 
