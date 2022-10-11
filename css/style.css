@@ -14,12 +14,78 @@
 :root {
     --primary-color:#0084fd;
     --primary-color-light:#b5ddff;
-    p:#9792e4;
-    --tirdary-color:#fdc15f;
 
-    --primary-lltext-color:#5b6f80;
+    --secondary-color:#9792e4;
+    --secondary-color-light:#ffffff;
+
+    --thirdary-color: #333333;
+    --thirdary-color-light: #667d90; 
+
+    --fourthary-color:#fdc15f;  
+
 }
 
+/* ***********************
+        colori
+**************************/
+
+/* colori card */
+
+.card.primary-color{
+    background-color: var(--primary-color-light);
+    color: var(--thirdary-color-light);
+}
+
+.card.secondary-color{
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-light);
+}
+
+.card.thirdary-color{
+    background-color: var(--secondary-color-light);
+    color: var(--secondary-color);
+}
+
+
+/* colori testo*/
+.color_01{
+    color: var(--primary-color);
+
+}
+.color_02{
+   color: var(--secondary-color-light);
+}
+.color_03{
+    color: var(--secondary-color);
+}
+.color_04{
+    color: var(--fourthary-color);
+}
+
+/* background-color */
+
+.bg-color_01{
+    background-color: var(--primary-color);
+
+}
+.bg-color_02{
+    background-color: var(--secondary-color-light);
+}
+.bg-color_03{
+    background-color: var(--secondary-color);
+}
+.bg-color_04{
+    background-color: var(--thirdary-color);
+}
+
+/* radius */
+.b-rad_m{
+    border-radius: 20px;
+}
+
+.b-rad_l{
+    border-radius: 50px;
+}
 
 /* ***********************
         CLASS-UTILITIES
@@ -27,7 +93,6 @@
 .container{
     margin: 0 auto;
     text-align: center;
-
 }
 
 .row {
@@ -53,33 +118,10 @@
     flex-basis: calc(100% / 2);
 }
 
-
-/* colori */
-
-.azul{
-    background-color: var(--primary-color-light);
-    color: #5b6f80;
-
+/* centratura */
+.center{
+    text-align: center;
 }
-
-.lilla{
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-.white{
- background-color: white;
- color: black;
-}
-
-.b-rad_m{
-    border-radius: 20px;
-}
-
-.b-rad_l{
-    border-radius: 50px;
-}
-
 
 /* ***********************
         GENERAL
@@ -97,6 +139,9 @@ a:not(footer){
         MOBILE-FIRST
 **************************/
 
+nav a{
+/*     color: var(--secondary-color-light) */
+}
 nav ul{
     display: none;
 }
@@ -114,4 +159,11 @@ nav ul{
 
 #expert .card-img img{
     border-radius: 50%;
+}
+
+/* ***********************
+        FREE
+**************************/
+#free.row{
+    justify-content: center;
 }
