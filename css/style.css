@@ -89,15 +89,6 @@ a:active{
 
 /**********************************************/
 
-/* radius */
-.b-r_m {
-    border-radius: 1rem;
-}
-
-.b-r_l {
-    border-radius: 1.5rem;
-}
-
 /* bottoni (colori: c-set_)*/
 
 .btn {
@@ -112,8 +103,39 @@ a{
     padding: .5rem .5rem;
 }
 
+/* radius */
+.b-r_m {
+    border-radius: 1rem;
+}
+
+.b-r_l {
+    border-radius: 2rem;
+}
+
+.b-r_xl {
+    border-radius: 50%;
+}
 
 /* font-size */
+
+.fs_01{
+    font-size:1rem ;
+}
+.fs_02{
+    font-size:1.4rem;
+}
+.fs_03{
+    font-size:1.6rem ;
+}
+.fs_04{
+    font-size:3rem;
+}
+.fs_05{
+    font-size: ;
+}
+.fs_06{
+    font-size: ;
+}
 
 
 /* ***********************
@@ -121,7 +143,6 @@ a{
 **************************/
 .container {
     margin: 0 auto;
-    text-align: center;
     padding: 0 1.5rem;
 }
 
@@ -141,64 +162,94 @@ a{
 }
 .card{
     height: 100%;
-}
-.card-img img {
-    border-radius: 50%;
+    padding: 1rem;
 }
 
 /* centratura */
-.left{
-    text-align: left;
-}
-.center {
+
+.centred{
     text-align: center;
 }
 
-/* padding */
-
+/********** spaziature ***************/
+.pd-b_0{
+    padding-bottom: 0;
+}
 .pd-b_01{
-    padding-bottom: 1.4rem;
+    padding-bottom: 1rem;
 }
 .pd-b_02{
-    padding-bottom:1.6rem;
+    padding-bottom: 1.4rem;
 }
 .pd-b_03{
-    padding-bottom:2.6rem;
+    padding-bottom:1.6rem;
 }
 .pd-b_04{
+    padding-bottom:2.6rem;
+}
+.pd-b_05{
     padding-bottom:3.5rem;
 }
-/* .pd-b_05{
+ .pd-b_06{
     padding-bottom:;
+
+
+ }
+
+.pd-t_0{
+    padding-top: 0;
 }
-.pd-t{
-padding-top: ;
+.pd-t_01{
+    padding-top: 1rem;
 }
-.pd{
-    padding: x 0;} */
+.pd-t_02{
+    padding-top: 1.4rem;
+}
+.pd-t_03{
+    padding-top:1.6rem;
+}
+.pd-t_04{
+    padding-top:2.6rem;
+}
+.pd-t_05{
+    padding-top:3.5rem;
+}
+ .pd-t_06{
+    padding-top;
+}
+
+.pd_0{
+    padding: 0rem;
+}
+.pd_01{
+    padding: 1rem;
+}
+.pd_02{
+    padding: 1.4rem;
+}
+.pd_03{
+    padding:1.6rem;
+}
+.pd_04{
+    padding:2.6rem;
+}
+.pd_05{
+    padding:3.5rem;
+}
+ .pd_06{
+    padding:;
+}
+/* margin */
+
+.mg_02{
+    margin: 1.4rem 0;
+}
+.mg_03{
+    margin: 1.6rem 0;
+}
 
 .subtitle{
     text-transform: uppercase;
-}
-
-
-
-/* ******spaziature****************** */
-.subtitle,
-.title>*{
-padding-bottom: 1.5rem;
-}
-
-/********** font-size *********** */
-.title h3,
-.subtitle,
-.btn{
-    font-size: 1rem;
-}
-
-.title.card-icon,
-.title.sup{
-    font-size: 3rem;
 }
 
 
@@ -255,63 +306,47 @@ nav .sandwitch-menu .fa-bars{
 }
 
 #services #s1_img{
-    transform: translateY(1.8rem) scale(90%);
+    transform:  translatex(-1.6rem) translateY(1.8rem) scale(90%);
+
 }
-
-
-.card-content .card-icon.sup{
-    /* font-size:?____________________ */
-}
-
 
 /* ***********************
-        STRATEGIC
+        PLANNING
 **************************/
-#app-dev .title h3{
-    /* dimensione minore */
+#app-dev button{
+    color: var(--thirdary-color-dark);
+    aspect-ratio: 1/1;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;  
 }
 
-
-
-
-
+#app-dev .title h3{
+    font-size: 1.2rem;
+}
 
 
 /* ***********************
         EXPERT
 **************************/
-
+#expert .row{
+    align-items: center;
+}
 #expert img{
     object-fit: cover;
     aspect-ratio: 1/1;
 }
 
-#expert .text p:before{
+#expert .card p:before{
     content: "\f10d";
     font-family:"FontAwesome";
 }
 
-#expert .text p:after{
+#expert .card p:after{
     content: "\f10e";
     font-family:"FontAwesome";
 }
 
 
-
-/* ***********************
-        FREE
-**************************/
-
-
-/* rivedere se classe globale center */
-#free.row {
-    justify-content: center;
-}
-#free h2{
-    font-size: 3rem;
-    color: #fdc15f;
-
-}
 
 
 /* ***********************
@@ -332,10 +367,39 @@ top: 0;
     text-transform: capitalize;
 }
 
+#about .col_md_1-2.col_lg_3-4{
+    padding-left: 1.6rem;
+    padding-right: 3rem ;
+}
+
+#about .card .text.title{
+    font-weight: 700;
+}
+#about .btn{
+    font-size: .8rem;
+}
 
 /* ***********************
             FREE
 **************************/
+
+
+#free.row {
+    justify-content: center;
+}
+
+#free .subtitle h4{
+    font-weight: 100;
+    opacity: 50%;
+   
+}
+
+#free h2{
+    font-size: 3rem;
+    color: #fdc15f;
+}
+
 #free .btn{
     color: var(--secondary-color);
+    padding: 1.2rem 3rem;
 }
