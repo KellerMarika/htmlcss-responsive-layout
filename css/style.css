@@ -18,6 +18,7 @@
     --secondary-color:#9792e4;
     --secondary-color-light:#ffffff;
 
+    --thirdary-color-dark:#000000;
     --thirdary-color: #333333;
     --thirdary-color-light: #667d90; 
 
@@ -46,6 +47,11 @@
     color: var(--secondary-color);
 }
 
+.card.c-set_04{
+    background-color: var(--secondary-color-light);
+    color: var(--thirdary-color-dark);
+}
+
 
 /* colori testo*/
 .t-c_01{
@@ -59,7 +65,13 @@
     color: var(--secondary-color);
 }
 .t-c_04{
+    color: var(--thirdary-color);
+}
+.t-c_05{
     color: var(--fourthary-color);
+}
+.t-c_06{
+    color: var(--thirdary-color-dark);
 }
 
 /* background-color */
@@ -79,13 +91,28 @@
 }
 
 /* radius */
-.b-rad_m{
-    border-radius: 20px;
+.b-r_m{
+    border-radius: 1rem;
 }
 
-.b-rad_l{
-    border-radius: 50px;
+.b-r_l{
+    border-radius: 1.5rem;
 }
+
+/* verifica di poter usare classi delle card */
+/* bottoni */
+.btn{
+
+}
+
+.btn.small{
+
+}
+
+
+
+/* font-size */
+
 
 /* ***********************
         CLASS-UTILITIES
@@ -98,7 +125,6 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid salmon;
 }
 
 .row>*{
@@ -111,7 +137,6 @@
 
 .card{
     padding: 10px;
-    border: 1px solid blue;
 }
 
 .col_1-2{
