@@ -7,6 +7,13 @@
     padding: 0;
 }
 
+a,
+a:hover,
+a:active{
+    color:unset;
+    text-decoration: none;
+}
+
 /* ***********************
         VARIABILI
 **************************/
@@ -27,38 +34,32 @@
 }
 
 /* ***********************
-        colori
+        palette colori
 **************************/
 
-
-.btn {
-    padding: .5rem 2rem;
-    border-radius: 1rem;
-    border: none;
-    margin: 0 0;
-}
-.btn.set_01{
+/* bg blu txt e h bianco  */
+.c-set_01{
     background-color: var(--primary-color);
     color: var(--secondary-color-light);
 }
 
-
-/* colori card */
-
+/* bg azzurro txt grigio + h bianco  */
 .c-set_01-light{
     background-color: var(--primary-color-light);
     color: var(--thirdary-color-light);
 }
 
 .c-set_01-light .title{
-    
+    color: var(--primary-color);
 }
 
+/* bg lilla txt e h bianco */
 .c-set_02 {
     background-color: var(--secondary-color);
     color: var(--secondary-color-light);
 }
 
+/* bg bianco txt grigio scuro + h lilla */
 .c-set_03 {
     background-color: var(--secondary-color-light);
     color: var(--thirdary-color);
@@ -68,56 +69,20 @@
 
 }
 
-.c-set_04 {
+/* bg bianco txt e h nero */
+.c-set_04{
     background-color: var(--secondary-color-light);
-    color: var(--thirdary-color-dark);
+    color: #000000;
 }
 
 
-/* colori testo*/
-.t-c_01 {
-    color: var(--primary-color);
-
-}
-
-.t-c_02 {
+/* bg grigio scuro + txt bianco */
+.c-set_05 {
+    background-color: var(--thirdary-color);
     color: var(--secondary-color-light);
 }
 
-.t-c_03 {
-    color: var(--secondary-color);
-}
-
-.t-c_04 {
-    color: var(--thirdary-color);
-}
-
-.t-c_05 {
-    color: var(--fourthary-color);
-}
-
-.t-c_06 {
-    color: var(--thirdary-color-dark);
-}
-
-/* background-color */
-
-.bg-c_01 {
-    background-color: var(--primary-color);
-
-}
-
-.bg-c_02 {
-    background-color: var(--secondary-color-light);
-}
-
-.bg-c_03 {
-    background-color: var(--secondary-color);
-}
-
-.bg-c_04 {
-    background-color: var(--thirdary-color);
-}
+/**********************************************/
 
 /* radius */
 .b-r_m {
@@ -128,12 +93,19 @@
     border-radius: 1.5rem;
 }
 
-/* verifica di poter usare classi delle card */
 /* bottoni */
-.btn {}
 
-.btn.small {}
+.btn {
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0 0;
+}
 
+.btn.small,
+a{
+    padding: .5rem .5rem;
+}
 
 
 /* font-size */
@@ -150,22 +122,22 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -.5rem;
 }
 
 .row>* {
-    border: 1px solid rgb(90, 23, 15);
-    padding: 20px;
+    padding: .5rem .5rem;
     flex-basis: 100%;
     flex-grow: 1;
-
 }
-
-.card {
-    padding: 10px;
-}
-
 .col_1-2 {
     flex-basis: calc(100% / 2);
+}
+.card{
+    height: 100%;
+}
+.card-img img {
+    border-radius: 50%;
 }
 
 /* centratura */
@@ -173,10 +145,14 @@
     text-align: center;
 }
 
+.subtitle{
+    text-transform: uppercase;
+}
+
+
 /* ***********************
         GENERAL
 **************************/
-
 a,
 button,
 title {
@@ -188,21 +164,21 @@ img {
     width: 50%;
 }
 
-a:not(footer) {
-    text-decoration: none;
-}
-
-
-
-
 /* ***********************
         MOBILE-FIRST
 **************************/
+/* ***********************
+        NAV
+**************************/
 
-/* NAV */
-
-nav a {
-    color: var(--secondary-color-light);
+nav .row {
+    align-items: center;
+}
+nav .nav-sx{
+text-align: left;
+}
+nav .nav-dx{
+    text-align: right;
 }
 
 nav ul {
@@ -210,11 +186,21 @@ nav ul {
 }
 
 nav .logo img {
-    width: 80px;
+    /* ____________________________________________ */
+    width: 3rem;
+}
+/* ***********************
+        SERVICES
+**************************/
+#services .row{
+    text-align: left;
 }
 
-#services .card-content .row {
-    flex-direction: row;
+
+
+
+#service #s1_img{
+    width: 50%;
 }
 
 
@@ -230,18 +216,10 @@ nav .logo img {
 
 
 
+
 /* ***********************
         EXPERT
 **************************/
-
-#expert .card-img img {
-    border-radius: 50%;
-}
-
-#expert .subtitle h4{
-    text-transform: uppercase;
-}
-
 
 #expert img{
     object-fit: cover;
@@ -257,4 +235,14 @@ nav .logo img {
 /* rivedere se classe globale center */
 #free.row {
     justify-content: center;
+}
+
+/* ***********************
+            ABOUT
+**************************/
+#about .card
+
+#about .card-icon .fa-quote-left{
+    position: absolute;
+    transform: translate( 100px 0 0);
 }

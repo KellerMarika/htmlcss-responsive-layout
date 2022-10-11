@@ -4,8 +4,8 @@
 
 
 /*********MEDIUM SIZE*****************/
-@media screen and (min-width: 480px) {
 
+@media screen and (min-width: 480px) {
 
     .col_md_1-2{
         flex-basis: calc(100% / 2);
@@ -19,12 +19,11 @@
     .col_md_2-3{
         flex-basis: calc(100% /3 *2);
     }
-
-
-    .row-col{
-        flex-direction: column;
-    }
 }
+/* ***********************
+        SERVICES
+**************************/
+
 
 
 
@@ -41,7 +40,9 @@
     .col_lg_1-3{
         flex-basis: calc(100% /3);
     }
-    
+    .col_lg_2-3{
+        flex-basis: calc(100% /3 *2);
+    }
     
     .col_lg_1-4{
         flex-basis: calc(100% /4);
@@ -58,20 +59,22 @@
         flex-basis: calc(100% /5 * 4);
     }
 
-    
+    .row-col{
+        flex-direction: row;
+    }
     /****** NAV *******/
+
+    nav ul{
+        display:inline-block
+    }
 
     nav li{
         display: inline-block;
     }
     
+    nav .sandwitch-menu{
+        display: none;
+    }
+
     
     /* ***** SERVICES ******* */
-
-    /* non va ci litigo dopo______________________ */
-    #services .card-content .row {
-    flex-direction:column;
-    
-}
-
-}
