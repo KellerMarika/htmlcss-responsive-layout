@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
 
 a,
 a:hover,
@@ -59,6 +63,7 @@ a:active{
     color: var(--secondary-color-light);
 }
 
+
 /* bg bianco txt grigio scuro + h lilla */
 .c-set_03 {
     background-color: var(--secondary-color-light);
@@ -66,8 +71,8 @@ a:active{
 }
 .c-set_03 .title{
     color: #9792e4;
-
 }
+
 
 /* bg bianco txt e h nero */
 .c-set_04{
@@ -93,7 +98,7 @@ a:active{
     border-radius: 1.5rem;
 }
 
-/* bottoni */
+/* bottoni (colori: c-set_)*/
 
 .btn {
     padding: .5rem 2rem;
@@ -117,6 +122,7 @@ a{
 .container {
     margin: 0 auto;
     text-align: center;
+    margin: 0 1.5rem;
 }
 
 .row {
@@ -186,9 +192,13 @@ nav ul {
 }
 
 nav .logo img {
-    /* ____________________________________________ */
-    width: 3rem;
+    width: 4rem;
 }
+
+nav .sandwitch-menu .fa-bars{
+    font-size: 1.2rem;
+}
+
 /* ***********************
         SERVICES
 **************************/
@@ -202,6 +212,9 @@ nav .logo img {
 }
 
 
+.card-content .card-icon.sup{
+    /* font-size:?____________________ */
+}
 
 
 /* ***********************
@@ -210,6 +223,8 @@ nav .logo img {
 #app-dev .title h3{
     /* dimensione minore */
 }
+
+
 
 
 
@@ -243,4 +258,12 @@ nav .logo img {
 #about .card-icon .fa-quote-left{
     position: absolute;
     transform: translate( 100px 0 0);
+}
+
+
+/* ***********************
+            FREE
+**************************/
+#free .btn{
+    color: var(--secondary-color);
 }

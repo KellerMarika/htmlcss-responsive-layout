@@ -19,6 +19,14 @@
     .col_md_2-3 {
         flex-basis: calc(100% /3 *2);
     }
+    
+    /*************************
+           BASE
+    *************************/
+    
+    body{
+        font-size: 14px;
+    }
 }
 
 /* ***********************
@@ -66,6 +74,14 @@ large-desktop:1002 */
     flex-direction: row !important;
     }
 
+    /*************************
+           BASE
+    *************************/
+    
+    body{
+        font-size: 16px;
+    }
+
 
 
     /****** NAV *******/
@@ -84,3 +100,7 @@ large-desktop:1002 */
 
 
     /* ***** SERVICES ******* */
+    /* ***** STRATEGIC ******* */
+    #strategic .row{
+        margin: 0 4rem;
+    }
