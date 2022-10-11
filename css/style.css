@@ -45,22 +45,30 @@
 
 /* colori card */
 
-.card.c-set_01{
+.c-set_01-light{
     background-color: var(--primary-color-light);
     color: var(--thirdary-color-light);
 }
 
-.card.c-set_02 {
+.c-set_01-light .title{
+    
+}
+
+.c-set_02 {
     background-color: var(--secondary-color);
     color: var(--secondary-color-light);
 }
 
-.card.c-set_03 {
+.c-set_03 {
     background-color: var(--secondary-color-light);
-    color: var(--secondary-color);
+    color: var(--thirdary-color);
+}
+.c-set_03 .title{
+    color: #9792e4;
+
 }
 
-.card.c-set_04 {
+.c-set_04 {
     background-color: var(--secondary-color-light);
     color: var(--thirdary-color-dark);
 }
