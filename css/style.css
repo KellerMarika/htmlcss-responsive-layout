@@ -31,50 +31,50 @@
 
 /* colori card */
 
-.card.primary-color{
+.card.c-set_01{
     background-color: var(--primary-color-light);
     color: var(--thirdary-color-light);
 }
 
-.card.secondary-color{
+.card.c-set_02{
     background-color: var(--secondary-color);
     color: var(--secondary-color-light);
 }
 
-.card.thirdary-color{
+.card.c-set_03{
     background-color: var(--secondary-color-light);
     color: var(--secondary-color);
 }
 
 
 /* colori testo*/
-.color_01{
+.t-c_01{
     color: var(--primary-color);
 
 }
-.color_02{
+.t-c_02{
    color: var(--secondary-color-light);
 }
-.color_03{
+.t-c_03{
     color: var(--secondary-color);
 }
-.color_04{
+.t-c_04{
     color: var(--fourthary-color);
 }
 
 /* background-color */
 
-.bg-color_01{
+.bg-c_01{
     background-color: var(--primary-color);
 
 }
-.bg-color_02{
+.bg-c_02{
     background-color: var(--secondary-color-light);
 }
-.bg-color_03{
+.bg-c_03{
     background-color: var(--secondary-color);
 }
-.bg-color_04{
+.bg-c_04{
     background-color: var(--thirdary-color);
 }
 
@@ -140,7 +140,7 @@ a:not(footer){
 **************************/
 
 nav a{
-/*     color: var(--secondary-color-light) */
+  color: var(--secondary-color-light);
 }
 nav ul{
     display: none;
