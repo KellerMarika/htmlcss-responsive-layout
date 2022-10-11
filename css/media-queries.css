@@ -19,21 +19,27 @@
     .col_md_2-3 {
         flex-basis: calc(100% /3 *2);
     }
-    
+
     /*************************
            BASE
     *************************/
-    
-    body{
+
+    body {
         font-size: 14px;
+    }
+
+
+    /* ****** FREE ********** */
+
+    #free .row {
+        justify-content: center;
+    }
+
+    #free .row>* {
+        flex-grow: 0;
     }
 }
 
-/* ***********************
-        SERVICES
-**************************/
-/* desktop:992
-large-desktop:1002 */
 
 /********LARGE SIZE*******************/
 @media screen and (min-width: 768px) {
@@ -71,14 +77,14 @@ large-desktop:1002 */
     }
 
     .row-col {
-    flex-direction: row !important;
+        flex-direction: row !important;
     }
 
     /*************************
            BASE
     *************************/
-    
-    body{
+
+    body {
         font-size: 16px;
     }
 
@@ -100,7 +106,13 @@ large-desktop:1002 */
 
 
     /* ***** SERVICES ******* */
+
+
     /* ***** STRATEGIC ******* */
-    #strategic .row{
-        margin: 0 4rem;
+    #strategic .row {
+        margin: 0 5rem;
     }
+
+
+
+}
