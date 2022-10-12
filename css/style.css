@@ -292,7 +292,6 @@ nav .sandwitch-menu .fa-bars{
 **************************/
 #services .card .row{
     text-align: left;
-    flex-direction: column;
     overflow: hidden;
 }
 #services .col_md_2-3 .card{

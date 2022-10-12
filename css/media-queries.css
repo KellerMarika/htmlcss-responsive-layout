@@ -83,8 +83,8 @@
     }
 
     .row-col {
-        flex-direction: row !important;
-        /* se tolgo l'!important mi salta get demo application */
+        flex-direction: row;
+     
     }
 
     /*************************
