@@ -1,0 +1,21 @@
+ @media screen and (min-width: 560px) and (max-width:767px) {
+
+   .col_bonus_1-1 {
+        flex-basis:100%;
+    }
+    .col_bonus_1-2 {
+        flex-basis: calc(100% / 2);
+    }
+} 
+
+@media screen and (min-width: 1200px){
+
+.row-col-xl{
+    flex-direction: column;
+}
+
+.col_bonus_1-3 {
+    flex-basis: calc(100% /3);
+}
+
+}

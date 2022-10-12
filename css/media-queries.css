@@ -20,22 +20,28 @@
         flex-basis: calc(100% /3 *2);
     }
 
+    .c-set_md_01-light{
+        color: var(--thirdary-color);
+    }
+
+
     /*************************
            BASE
     *************************/
-
     body {
         font-size: 14px;
     }
 
 
-    /* ****** FREE ********** */
+    /* ****** FREE + FOOTER********** */
 
-    #free .row {
+    #free .row,
+    #footer .row {
         justify-content: center;
     }
 
-    #free .row>* {
+    #free .row>*,
+    #footer .row>* {
         flex-grow: 0;
     }
 }
@@ -89,7 +95,6 @@
     }
 
 
-
     /****** NAV *******/
 
     nav ul {
@@ -105,19 +110,18 @@
     }
 
 
-    /* ***** SERVICES ******* */
-
 
     /* ***** PLANNING ******* */
     #planning .row {
         margin: 0 5rem;
     }
-    #planning .row-col .col_lg_1-5{
+
+    #planning .row-col .col_lg_1-5 {
         flex-shrink: 0;
     }
-    #planning .row-col .col_lg_4-5{
+
+    #planning .row-col .col_lg_4-5 {
         flex-grow: 0;
     }
-
 
 }

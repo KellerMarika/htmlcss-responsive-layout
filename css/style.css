@@ -8,7 +8,8 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 12px; 
+    line-height: 1.6rem;
 }
 
 a,
@@ -16,7 +17,9 @@ a:hover,
 a:active{
     color:unset;
     text-decoration: none;
+
 }
+
 
 /* ***********************
         VARIABILI
@@ -130,12 +133,6 @@ a{
 .fs_04{
     font-size:3rem;
 }
-.fs_05{
-    font-size: ;
-}
-.fs_06{
-    font-size: ;
-}
 
 
 /* ***********************
@@ -156,6 +153,8 @@ a{
     padding: .5rem .5rem;
     flex-basis: 100%;
     flex-grow: 1;
+    overflow: hidden;
+    
 }
 .col_1-2 {
     flex-basis: calc(100% / 2);
@@ -163,6 +162,7 @@ a{
 .card{
     height: 100%;
     padding: 1rem;
+    
 }
 
 /* centratura */
@@ -172,9 +172,7 @@ a{
 }
 
 /********** spaziature ***************/
-.pd-b_0{
-    padding-bottom: 0;
-}
+/* padding-bottom */
 .pd-b_01{
     padding-bottom: 1rem;
 }
@@ -186,19 +184,16 @@ a{
 }
 .pd-b_04{
     padding-bottom:2.6rem;
+
 }
 .pd-b_05{
-    padding-bottom:3.5rem;
+    padding-bottom:3.8rem;
 }
  .pd-b_06{
-    padding-bottom:;
-
-
+    padding-bottom:3;
  }
 
-.pd-t_0{
-    padding-top: 0;
-}
+/* padding-top */
 .pd-t_01{
     padding-top: 1rem;
 }
@@ -212,12 +207,10 @@ a{
     padding-top:2.6rem;
 }
 .pd-t_05{
-    padding-top:3.5rem;
-}
- .pd-t_06{
-    padding-top;
+    padding-top:3.8rem;
 }
 
+/* padding */
 .pd_0{
     padding: 0rem;
 }
@@ -233,12 +226,8 @@ a{
 .pd_04{
     padding:2.6rem;
 }
-.pd_05{
-    padding:3.5rem;
-}
- .pd_06{
-    padding:;
-}
+
+
 /* margin */
 
 .mg_02{
@@ -247,11 +236,13 @@ a{
 .mg_03{
     margin: 1.6rem 0;
 }
+.mg-b_05{
+    margin-bottom: 2.8rem;
+}
 
 .subtitle{
     text-transform: uppercase;
 }
-
 
 /* ***********************
         GENERAL
@@ -267,9 +258,9 @@ img {
     width: 100%;
 }
 
-/* ***********************
-        MOBILE-FIRST
-**************************/
+
+/****** MOBILE-FIRST**************/
+
 /* ***********************
         NAV
 **************************/
@@ -304,10 +295,11 @@ nav .sandwitch-menu .fa-bars{
     flex-direction: column;
     overflow: hidden;
 }
-
+#services .col_md_2-3 .card{
+    padding-bottom: 0;
+}
 #services #s1_img{
-    transform:  translatex(-1.6rem) translateY(1.8rem) scale(90%);
-
+    transform:  translatex(-1.6rem) translateY(2.6rem) scale(90%);
 }
 
 /* ***********************
@@ -383,7 +375,6 @@ top: 0;
             FREE
 **************************/
 
-
 #free.row {
     justify-content: center;
 }
@@ -402,4 +393,13 @@ top: 0;
 #free .btn{
     color: var(--secondary-color);
     padding: 1.2rem 3rem;
+}
+
+/* ***********************
+            FOOTER
+**************************/
+
+#footer a{
+  text-decoration: underline;
+  color: #9792e4;  
 }
