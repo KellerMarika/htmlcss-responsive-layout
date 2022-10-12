@@ -21,7 +21,7 @@
     }
 
     .c-set_md_01-light{
-        color: var(--thirdary-color);
+        color: var(--thirdary-colort);
     }
 
 
@@ -84,6 +84,7 @@
 
     .row-col {
         flex-direction: row !important;
+        /* se tolgo l'!important mi salta get demo application */
     }
 
     /*************************

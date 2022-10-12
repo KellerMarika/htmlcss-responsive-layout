@@ -1,4 +1,7 @@
- @media screen and (min-width: 560px) and (max-width:767px) {
+
+/*******BONUS M********************/
+
+@media screen and (min-width: 560px) and (max-width:767px) {
 
    .col_bonus_1-1 {
         flex-basis:100%;
@@ -8,10 +11,15 @@
     }
 } 
 
+
+
+
+/*******BONUS XL********************/
+
 @media screen and (min-width: 1200px){
 
-.row-col-xl{
-    flex-direction: column;
+.row-row-xl{
+    flex-direction: row;
 }
 
 .col_bonus_1-3 {
@@ -19,3 +27,6 @@
 }
 
 }
+
+
+/* non funziona  */
