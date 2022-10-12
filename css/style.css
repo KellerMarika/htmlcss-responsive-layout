@@ -264,7 +264,10 @@ img {
 /* ***********************
         NAV
 **************************/
-
+nav{
+    position: fixed;
+    width: 100%;
+}
 nav .row {
     align-items: center;
 }
@@ -290,6 +293,7 @@ nav .sandwitch-menu .fa-bars{
 /* ***********************
         SERVICES
 **************************/
+
 #services .card .row{
     text-align: left;
     overflow: hidden;
